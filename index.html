@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
       rel="stylesheet"
@@ -56,12 +57,17 @@
             </li>
           </ul>
         </address>
+        <button class="menu-button" type="button">
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <!-- MAIN -->
 
-    <main class="main">
+    <main class="main hidden">
       <!-- HERO SECTION -->
 
       <section class="hero">
@@ -440,7 +446,7 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="footer-left">
           <a class="logo footer-logo" href="./index.html"
@@ -505,7 +511,7 @@
 
     <!-- MODAL -->
 
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="icon-close" width="8" height="8">
@@ -597,6 +603,80 @@
 
           <button type="submit" class="submit-btn">Send</button>
         </form>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close" type="button">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mobile-address">
+          <ul class="mobile-address-list">
+            <li class="mobile-address-item">
+              <a class="mobile-address-link accent" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-address-item">
+              <a class="mobile-address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="mobile-socials">
+          <ul class="mobile-socials-list">
+            <li class="mobile-socials-item">
+              <a class="mobile-socials-link" href="">
+                <svg class="mobile-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a class="mobile-socials-link" href="">
+                <svg class="mobile-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a class="mobile-socials-link" href="">
+                <svg class="mobile-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a class="mobile-socials-link" href="">
+                <svg class="mobile-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
