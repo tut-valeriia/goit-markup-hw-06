@@ -776,6 +776,7 @@ img {
 @media screen and (min-width: 768px) {
   .footer-container {
     max-width: 584px;
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
